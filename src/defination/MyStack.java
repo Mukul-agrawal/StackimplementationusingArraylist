@@ -1,4 +1,4 @@
 package defination;
 
-public class MyStack {
+public class MyStack<E> {
 }

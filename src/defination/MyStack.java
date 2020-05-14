@@ -4,6 +4,7 @@ import adt.StackADT;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class MyStack<E> implements StackADT<E> {
     private final List<E> data;
@@ -20,7 +21,10 @@ public class MyStack<E> implements StackADT<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return data.get(data.size() - 1);
     }
 
     @Override

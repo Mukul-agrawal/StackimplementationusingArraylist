@@ -29,7 +29,10 @@ public class MyStack<E> implements StackADT<E> {
 
     @Override
     public E pop() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return data.remove(data.size() - 1);
     }
 
     @Override

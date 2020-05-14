@@ -37,6 +37,6 @@ public class MyStack<E> implements StackADT<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return data.isEmpty();
     }
 }

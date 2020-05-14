@@ -14,7 +14,8 @@ public class MyStack<E> implements StackADT<E> {
 
     @Override
     public E push(E obj) {
-        return null;
+        data.add(obj);
+        return obj;
     }
 
     @Override

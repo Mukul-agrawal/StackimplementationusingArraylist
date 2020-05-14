@@ -19,7 +19,7 @@ public class Main {
                 case 1:
                     System.out.println("Enter the data(int num) of the node to push: ");
                     int data = scanner.nextInt();
-                    stack.push(data);
+                    int pushedData = stack.push(data);
                     break;
                 case 2:
                     int poppedData = stack.pop();
